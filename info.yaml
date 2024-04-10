@@ -1,5 +1,5 @@
 # Tiny Tapeout project information
-project:        tt_um_example
+project:        # tt_um_example
   title:        "tt_um_example"      # Project title
   author:       "tt_um_example"      # Your name
   discord:      "tt_um_example"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
