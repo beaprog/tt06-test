@@ -5,7 +5,7 @@ project:        tt_um_example
   discord:      "tt_um_example"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "tt_um_example"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     10 MHz       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -20,9 +20,9 @@ project:        tt_um_example
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
+  ui[0]: "A"
+  ui[1]: "B"
+  ui[2]: "cin"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -30,8 +30,8 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
+  uo[0]: "S"
+  uo[1]: "cout"
   uo[2]: ""
   uo[3]: ""
   uo[4]: ""
