@@ -46,27 +46,4 @@ multiplexer2 mux_sum0(temp0[0],temp1[0],cin,S[0]);
 multiplexer2 mux_sum1(temp0[1],temp1[1],cin,S[1]);
 multiplexer2 mux_sum2(temp0[2],temp1[2],cin,S[2]);
 multiplexer2 mux_sum3(temp0[3],temp1[3],cin,S[3]);
-
-
-module fulladder
-        (   input a,b,cin,
-            output sum,carry
-            );
-
-assign sum = a ^ b ^ cin;
-assign carry = (a & b) | (cin & b) | (a & cin);
-endmodule
-module multiplexer2
-        (   input i0,i1,sel,
-            output reg bitout
-            );
-
-always@(i0,i1,sel)
-begin
-if(sel == 0)
-    bitout = i0;
-else
-    bitout = i1; 
-end
-endmodule
 endmodule
